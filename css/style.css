@@ -1,0 +1,109 @@
+body{
+	margin:1%;
+	padding:1%;
+    font-size:150%;
+    background-color: lightblue;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.skip a {
+    background: #f1f1f1;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    top: -40px;
+    transition: top 1s ease-out;
+    -webkit-transition: top 1s ease-out;
+    padding: 6px;
+}
+
+.skip a:focus {
+    position: absolute;
+    top: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
+    
+}
+
+/*Make the h1 heading bigger with a bold font*/
+h1{
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+
+
+nav {
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(94, 176, 191);
+}
+
+nav li {
+	padding:10px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-self: center;
+    /* flex-direction: row; */
+    /* justify-content: flex-start; */
+    /* align-items: center; */
+    /* width: 20%; */
+    /* text-align: center; */
+}
+
+
+
+/* a:focus {
+    color: white;
+} */
+a:visited{color:#0000FF;}
+
+
+footer {
+    background-color:rgb(94, 176, 191);;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+/* fun.html style */
+
+.container{
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.grid-gallery { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    /* grid-template-rows: 300px; */
+    }
+.grid-gallery img {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    max-width: 100%;
+    height: 300px;
+  }
