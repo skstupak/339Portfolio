@@ -7,11 +7,11 @@ body{
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
-    align-items: center;
-    
+    align-items: center;   
 }
+
 
 .skip a {
     background: #f1f1f1;
@@ -22,6 +22,7 @@ header{
     transition: top 1s ease-out;
     -webkit-transition: top 1s ease-out;
     padding: 6px;
+    color: blue;
 }
 
 .skip a:focus {
@@ -39,45 +40,86 @@ a:hover {
 /*Make the h1 heading bigger with a bold font*/
 h1{
 	font-size: 2em; 
-	font-weight: bold;
+    font-weight: bold;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: rgb(58, 32, 118);
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 2em;
+    color: rgb(58, 32, 118);
 }
 
+h3 {
+    font-size: 1em;
+    text-align: center;
+    color: rgb(58, 32, 118);
+}
 
+h4 {
+    font-size: 1em;
+    text-align: center;
+    color: rgb(69, 14, 196);
+}
+a {
+    color: white;
+}
 
 nav {
-    margin: 10px 0;
+    /* margin: 10px 0; */
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    background-color: rgb(94, 176, 191);
+    /* flex-wrap: wrap; */
+    background-color: rgb(27, 150, 172);
 }
 
 nav li {
-	padding:10px;
-    
+    /* margin: 10px 0; */
+    width: 100%;
+    padding-top:15px; 
+    padding-bottom: 15px;
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     align-self: center;
-    /* flex-direction: row; */
-    /* justify-content: flex-start; */
-    /* align-items: center; */
-    /* width: 20%; */
-    /* text-align: center; */
+    list-style-type: none;
+    
 }
 
-
+p {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 /* a:focus {
     color: white;
 } */
-a:visited{color:#0000FF;}
+a:visited{
+    color:white;
+}
 
+.skip a {
+    color: blue;
+}
+
+
+#current {
+    background-color:rgb(58, 32, 118);
+    text-transform: uppercase;
+    
+}
 
 footer {
-    background-color:rgb(94, 176, 191);;
+    background-color:rgb(27, 150, 172);
     color: white;
     padding: 30px;
     text-align: center;
@@ -97,12 +139,12 @@ img {
 .grid-gallery { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
     align-items: center;
     /* grid-template-rows: 300px; */
     }
 .grid-gallery img {
-    border: 1px solid #ccc;
+    border: 1px solid #341972;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
     max-width: 100%;
     height: 300px;
