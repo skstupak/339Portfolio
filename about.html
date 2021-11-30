@@ -10,6 +10,14 @@
     <title>Sarah Stupak's Portfolio</title>
   </head>
   <body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSGQ0FKP13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GSGQ0FKP13');
+</script>
     <main class="about">
       <h1>Sarah Stupak's Portfolio</h1>
       <div class="skip"><a href="#main">Skip to Main Content</a></div>
@@ -20,16 +28,29 @@
           <li><a href="experiences.html">Experiences</a></li>
           <li><a href="extracurriculars.html">Extracurriculars</a></li>
           <li><a href="fun.html">Fun</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
        </nav>
+
+      <div class="dropdown">
+        <button class="dropbtn">Dropdown Menu</button>
+        <div class="dropdown-content">
+          <ul>
+            <li id = "current"><a href="about.html">About</a></li>
+            <li><a href="experiences.html">Experiences</a></li>
+            <li><a href="extracurriculars.html">Extracurriculars</a></li>
+            <li><a href="fun.html">Fun</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
    
         <header id = "main">
           <h2>About Me</h2>
         </header>
 
-    
-        
-      <img src="images/me.JPG" alt=""/>
+     
+        <img src="images/me.jpg" alt="This is a picture of me" id = "me"/>
     
         <p>Hi, welcome to my Portfolio. My name is Sarah Stupak and I am a junior at the University of Michigan's School of Information.
             My focus is in Data Science and Analytics where I am learning
