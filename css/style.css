@@ -141,6 +141,12 @@ li {
     text-align: center;
     
 }
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 
 footer {
   background-color:rgb(27, 150, 172);
@@ -270,8 +276,9 @@ img {
     margin-left: auto;
     margin-right: auto;
     background-color: transparent;
-    width: 300px;
+    width: 300px; 
     height: 300px;
+    
     
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
@@ -335,7 +342,8 @@ img {
 
       #current {
         width:40%;
-      }    
+      }   
+
   }
 
   @media screen and (min-width: 1024px){ 
@@ -343,9 +351,20 @@ img {
     .flip-card:hover .flip-card-inner {
       transform: rotateY(180deg);
     }
+
+    /* .flip-card:active .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card:focus .flip-card-inner {
+      transform: rotateY(180deg);
+    } */
+
     nav {
       display: none;
     }
+
+
  
     /* Dropdown Button */
     .dropbtn {
@@ -396,10 +415,8 @@ img {
     background-color: rgb(58, 32, 118);
   }
 
-  .grid-gallery {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
+
+
 }
     
   @media screen and (prefers-reduced-motion: reduce){

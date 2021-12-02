@@ -7,7 +7,8 @@
     <link rel="stylesheet" type = "text/css" href="css/style.css"> 
     <link rel="shortcut icon" type="image/jpg" href="images/heart.jpg"/>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
-    <title>Sarah Stupak's Portfolio</title>
+    <script src="./index.js"></script>
+    <title>Portfolio</title>
   </head>
   <body>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSGQ0FKP13"></script>
@@ -72,6 +73,17 @@
           to apply my skillset in multiple situations. Outside of school, I enjoy various activities, 
           which you will be able to see on the Fun page. Thank you for browsing my portfolio!
         </p>
+      
+        <h3>My House on Google Maps</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+      
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfYJ7DNUzhmeSP-JAIHycMdsUBhOuYPlM&callback=initMap&libraries=&v=weekly"
+          async
+        ></script>
+        
         
     </main>
 

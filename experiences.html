@@ -7,7 +7,7 @@
     <link rel="stylesheet" type = "text/css" href="css/style.css"> 
     <link rel="shortcut icon" type="image/jpg" href="images/heart.jpg"/>
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
-   <title>Sarah Stupak Experiences</title>
+   <title>Experiences</title>
   </head>
   <body>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GSGQ0FKP13"></script>
@@ -50,17 +50,18 @@
       </header>
 
       <div class="flip-card">
-        <div class="flip-card-inner">
+        <div class="flip-card-inner" id = "picture_flip">
           <div class="flip-card-front">
             <img src="images/fd.jpg" alt="picture of me at the fire department" style="width:300px;height:300px;">
           </div>
           <div class="flip-card-back">
-            <p>Award from Fire Department</p> 
+            <p id = "picture_flip2">Award from Fire Department</p> 
             <p>I received an award for my few years of service</p> 
             
           </div>
         </div>
       </div>
+
 
     
       <p class="tester">
@@ -121,4 +122,18 @@
         <p>University of Michigan School of Information <br/>
           &copy; Sarah Stupak - Web Design 2021</p>
     </footer>
+    <script>
+      for (let p = 1; p <= 2; p++) {
+      document.getElementById("picture_flip2").addEventListener("focus", function() {
+      var pic = document.getElementById("picture_flip");
+      pic.classList.add("rotation");
+      });
+      document.getElementById("picture_flip2").addEventListener("blur", function() {
+      var pic = document.getElementById("picture_flip");
+      pic.classList.remove("rotation");
+      });
+      }
+
+    </script>
   </body>
+  </html>
