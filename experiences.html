@@ -55,8 +55,9 @@
             <img src="images/fd.jpg" alt="picture of me at the fire department" style="width:300px;height:300px;">
           </div>
           <div class="flip-card-back">
-            <p id = "picture_flip2">Award from Fire Department</p> 
+            <p >Award from Fire Department</p> 
             <p>I received an award for my few years of service</p> 
+            <!-- <a id = "picture_flip2" href = "https://www.woodclifflakefd.com">https://www.woodclifflakefd.com</a> -->
             
           </div>
         </div>
@@ -123,14 +124,14 @@
           &copy; Sarah Stupak - Web Design 2021</p>
     </footer>
     <script>
-      for (let p = 1; p <= 2; p++) {
-      document.getElementById("picture_flip2").addEventListener("focus", function() {
-      var pic = document.getElementById("picture_flip");
-      pic.classList.add("rotation");
+      for (let p = 1; p <= 4; p++) {
+      document.getElementById("picture_flip2" + p).addEventListener("focus", function() {
+      var pic = document.getElementById("picture_flip" + p);
+      pic.classList.add("rotate");
       });
-      document.getElementById("picture_flip2").addEventListener("blur", function() {
-      var pic = document.getElementById("picture_flip");
-      pic.classList.remove("rotation");
+      document.getElementById("picture_flip2" + p).addEventListener("blur", function() {
+      var pic = document.getElementById("picture_flip" + p);
+      pic.classList.remove("rotate");
       });
       }
 

@@ -360,6 +360,10 @@ img {
       transform: rotateY(180deg);
     } */
 
+    .rotate {
+      transform: rotateY(180deg);
+    }
+
     nav {
       display: none;
     }
